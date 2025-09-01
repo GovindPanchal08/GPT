@@ -277,3 +277,4 @@ Open an issue or reach out to the maintainer for support.
 ---
 - A frontend example (React/Vanilla) to consume this setup
 ```
+---
