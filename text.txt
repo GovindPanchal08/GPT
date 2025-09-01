@@ -1,0 +1,39 @@
+Separation of Concerns
+
+Controllers → Handle requests/responses
+
+Services → Business logic
+
+Data Layer → DB operations only
+
+Horizontal Scaling
+
+Use PM2 clustering to run multiple Node processes
+
+Load balancer distributes requests
+
+Performance Optimizations
+
+Redis for caching heavy DB queries
+
+Message queue for async tasks (don’t block HTTP request)
+
+Use streaming for large file/data handling
+
+Security Layers
+
+API Gateway → Request validation, throttling
+
+JWT & API keys for auth
+
+Input sanitization & HTTPS everywhere
+
+Environment-based configs & secret vaults
+
+Resilience
+
+Retry logic & circuit breakers
+
+Graceful shutdown
+
+Health checks & monitoring (Prometheus, Grafana)

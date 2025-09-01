@@ -1,0 +1,50 @@
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*.local
+
+# OS / Editor specific
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDEs
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
+
+# Build output
+dist/
+build/
+
+# Redis dump
+dump.rdb
+
+# Temporary files
+*.tmp
+*.temp
+
+# Debug
+debug.log
+
+# PM2 logs
+pids/
+*.pid
+
+# Socket.io
+*.sock
+
+# Optional: Exclude uploads if applicable
+uploads/
