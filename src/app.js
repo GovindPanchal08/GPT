@@ -5,7 +5,7 @@ const app = express();
 const helmet = require("helmet");
 const compression = require("compression");
 const cors = require("cors");
-const mongoSanitize = require("express-mongo-sanitize");
+// const mongoSanitize = require("express-mongo-sanitize");
 const authRoutes = require("./routes/auth.route");
 const chatRoutes = require("./routes/chat.route");
 const errorMiddleware = require("./middlewares/errorHandler");
@@ -16,7 +16,7 @@ const { rateLimitMiddleware } = require("./middlewares/rateLimit");
 
 app.use(cors());
 // app.use(xss());
-app.use(mongoSanitize());
+// app.use(mongoSanitize());
 app.use(helmet());
 app.use(compression());
 
