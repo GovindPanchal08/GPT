@@ -1,7 +1,7 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const app = express();
-const xss = require("xss-clean");
+// const xss = require("xss-clean");
 const helmet = require("helmet");
 const compression = require("compression");
 const cors = require("cors");
@@ -15,7 +15,7 @@ const { rateLimitMiddleware } = require("./middlewares/rateLimit");
 // app.set("trust proxy", 1);
 
 app.use(cors());
-app.use(xss());
+// app.use(xss());
 app.use(mongoSanitize());
 app.use(helmet());
 app.use(compression());
