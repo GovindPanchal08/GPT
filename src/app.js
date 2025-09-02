@@ -11,8 +11,8 @@ const chatRoutes = require("./routes/chat.route");
 const errorMiddleware = require("./middlewares/errorHandler");
 const { rateLimitMiddleware } = require("./middlewares/rateLimit");
 
-app.disable("x-powered-by");
-app.set("trust proxy", 1);
+// app.disable("x-powered-by");
+// app.set("trust proxy", 1);
 
 app.use(cors());
 app.use(xss());
