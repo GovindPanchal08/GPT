@@ -115,7 +115,7 @@ const initailizeSocket = (httpServer) => {
         // console.log("stm:", stm);
         const response = await aiChat([...ltm, ...stm]);
 
-        socket.emit("ai-msg", response);
+        socket.emit("ai-response", response);
 
         const [aiMsg, outputEmbeddings] = await Promise.all([
           msgModel.create({
