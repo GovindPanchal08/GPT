@@ -50,7 +50,7 @@ const initailizeSocket = (httpServer) => {
           maxRequests: 5,
           windowSeconds: 10,
         });
-        if (!rate) {
+        if (rate) {
           socket.emit("rate-limit", {
             message: "Too Many Requests - Slow Down",
           });
